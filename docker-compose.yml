@@ -10,6 +10,7 @@ services:
       - proxy
     volumes:
       - /var/run/docker.sock:/tmp/docker.sock:ro
+      - ./conf/custom.conf:/etc/nginx/conf.d/custom.conf
 
 networks:
   proxy:
