@@ -57,3 +57,11 @@ networks:
 file_get_content('http://api.local/);
 ```
 И наоборот, с `api.local` к `front.local`.
+
+
+Если docker.sock не монтируется
+------------------------------
+
+_Windows_: в PowerShell выполняем `$Env:COMPOSE_CONVERT_WINDOWS_PATHS=1`
+
+_Unix_: `export COMPOSE_CONVERT_WINDOWS_PATHS=1`
